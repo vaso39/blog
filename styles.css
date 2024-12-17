@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+:root {
+    --overpass-font: 'Overpass', sans-serif;
+    --ubuntu-font: 'Ubuntu', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+
+header {
+    height: 50vh;
+    padding: 4% 8%;
+    background: url("images/bg-pattern-intro.svg") no-repeat 50% 50%, linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border-bottom-left-radius: 70px;
+}
+
+h1 {
+    position: absolute;
+    top: 25%;
+    left: 24%;
+    text-align: center;
+    font-family: var(--overpass-font);
+    font-size: 50px;
+    color: white;
+}
+
+#subtitle {
+    position: absolute;
+    top: 38%;
+    left: 32%;
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--ubuntu-font);
+    color: #ffe1d3;
+}
+
+#header-btns {
+    position: absolute;
+    top: 36%;
+    left: 23%;
+    width: 50%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+#startForFree {
+    width: 20%;
+    margin: 0 4%;
+    padding: 1.8%;
+    font-family: var(--ubuntu-font);
+    color: #da6669;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#startForFree:hover {
+    color: white;
+    background-color: #fe7c84;
+    border-color: #fe7c84;
+}
+
+#learnMore {
+    width: 20%;
+    margin: 0 2%;
+    padding: 1%;
+    font-family: var(--ubuntu-font);
+    color: #ffe1d3;
+    background-color: inherit;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#learnMore:hover {
+    color: #fe7c84;
+    background-color: white;
+}
+
+
+
+nav {
+    display: grid;
+    grid: auto / 10% 70% 20%;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.navdrop {
+    display: inline-block;
+    margin: 0 1%;
+    padding: 0 2%;
+    color: #ffe1d3;
+    font-family: var(--ubuntu-font);
+    cursor: pointer;
+}
+
+.navbtns {
+    display: inline-block;
+    margin: 0 5%;
+    font-family: var(--ubuntu-font);
+    color: #ffe1d3;
+    cursor: pointer;
+}
+
+#login:hover {
+    text-decoration: underline;
+}
+
+#sign-up {
+    width: 30%;
+    padding: 6% 10%;
+    color: #fe7c84;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+#sign-up:hover {
+    color: white;
+    background-color: #fe7c84;
+}
+
+.arrow {
+    margin-left: 2px;
+}
+
+#hamburger-icon {
+    display: none;
+}
+ 
+
+#droplist-container {
+    width: 50%;
+    margin-top: -7%;
+    padding-left: 15%;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.droplist {
+    display: none;
+    width: 20%;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 8%;
+    box-shadow: 5px 5px 5px -5px rgb(107, 107, 107);
+}
+
+#product-droplist {
+    position: absolute;
+    left: 150px;
+}
+
+#company-droplist {
+    position: absolute;
+    left: 280px;
+}
+
+#connect-droplist {
+    position: absolute;
+    left: 410px;
+}
+
+.droplinks {
+    display: block;
+    padding: 5px;
+    font-family: var(--ubuntu-font);
+}
+
+.droplinks:hover {
+    font-weight: bold;
+}
+
+
+
+
+#editor-section {
+    height: 900px;
+    padding: 5%;
+    overflow: hidden;
+}
+
+#editor-title {
+    margin-top: 5%;
+    margin-bottom: 16%;
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--overpass-font);
+    color: #21415a;
+} 
+
+.para-titles {
+    font-size: 22px;
+    font-family: var(--overpass-font);
+    color: #2c445c;
+}
+
+.para {
+    width: 40%;
+    margin-top: -1%;
+    margin-bottom: 5%;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: var(--ubuntu-font);
+    color: #999ea2;
+}
+
+#editor-img {
+    position: relative;
+    top: -650px;
+    left: 50%;
+    overflow: hidden;
+}
+
+
+
+
+#phones-section {
+    height: 380px;
+    background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    overflow: hidden;
+}
+
+#phones-title {
+    width: fit-content;
+    position: absolute;
+    top: 1600px;
+    left: 55%;
+    font-size: 30px;
+    font-family: var(--overpass-font);
+    color: white;
+}
+
+#phones-para {
+    width: 40%;
+    position: absolute;
+    line-height: 22px;
+    font-size: 16px;
+    top: 1700px;
+    left: 55%;
+}
+
+#phones-img {
+    position: absolute;
+    top: 1450px;
+    left: 8%;
+    z-index: 2;
+}
+
+#circles-img {
+    position: relative;
+    top: -150%;
+    left: -16%;
+}
+
+
+#laptop-section {
+    height: 900px;
+    overflow: hidden;
+}
+
+#laptop-para-title-1 {
+    width: fit-content;
+    position: absolute;
+    top: 2100px;
+    left: 60%;
+    font-size: 22px;
+    font-family: var(--overpass-font);
+    color: #25405b;
+}
+
+#laptop-para-title-2 {
+    width: fit-content;
+    position: absolute;
+    top: 2400px;
+    left: 60%;
+    font-size: 22px;
+    font-family: var(--overpass-font);
+    color: #25405b;
+}
+
+#laptop-para-1 {
+    width: 35%;
+    position: absolute;
+    top: 2200px;
+    left: 60%;
+    font-size: 16px;
+    line-height: 25px;
+}
+ 
+#laptop-para-2 {
+    width: fit-content;
+    width: 35%;
+    position: absolute;
+    top: 2500px;
+    left: 60%;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+#laptop-img {
+    position: relative;
+    top: 50px;
+    left: -22%;
+}
+
+
+
+footer {
+    height: 200px;
+    padding: 5%;
+    display: grid;
+    grid: auto / 20% 20% 20% 20%;
+    justify-content: center;
+    background-color: #24242c;
+    border-top-right-radius: 70px;
+}
+
+.footer-label {
+    display: block;
+}
+
+.footer-lists {
+    font-family: var(--ubuntu-font);
+    color: #fafafa;
+}
+
+.footer-links {
+    display: block;
+    margin: 10% 0;
+    color: #bebfc4;
+}
+
+
+
+
+
+@media screen and (max-width: 771px) {
+
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .para-titles {
+        position: relative;
+    }
+
+    .para {
+        position: relative;
+    }
+
+
+    header {
+        padding: 0;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    h1, #subtitle, #header-btns {
+        position: unset;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #subtitle {
+        margin-top: -10%;
+        font-size: 18px;
+    }
+
+    #header-btns {
+        width: 100%;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #startForFree, #learnMore {
+        width: 100px;
+    }
+
+
+    nav {
+        margin-top: -20%;
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #navlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: 80%;
+    }
+
+    .navdrop {
+        margin: 20px 0;
+        font-weight: bold;
+        color: #203e58;
+    }
+
+    #navbtn {
+        padding: 0;
+        width: 80%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 400px;
+    }
+
+    #sign-up {
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hamburger-icon {
+        display: inline-block;
+    }
+
+    #product-droplist, #company-droplist ,#connect-droplist {
+        width: 70%;
+        margin: -5px 0;
+        padding: 5px 5px;
+        position: unset;
+        background-color: #efeff1;
+        text-align: center;
+        box-shadow: 0 0;
+    }
+
+    #product-droplist {
+        display: block;
+    }
+
+    .droplinks {
+        margin: 5px 0;
+        color: #606e7b;
+    }
+
+
+    #editor-section {
+        padding: 0;
+        width: 100%;
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #editor-title {
+        order: 1;
+        margin-top: 20%;
+    }
+
+    #editor-img {
+        max-width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        order: 2;
+    }
+
+    #editor-para-title-1 {
+        order: 3;
+        margin-top: 20%;
+    }
+
+    #editor-para-title-2 {
+        order: 5;
+        margin-top: 20%;
+    }
+
+    #editor-para-1 {
+        order: 4;
+        width: 70%;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    #editor-para-2 {
+        order: 6;
+        width: 70%;
+        text-align: center;
+        line-height: 22px;
+    }
+
+
+
+    #phones-section {
+        padding: 0;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #phones-img {
+        position: absolute;
+        top: 1800px;
+        left: 0;
+        max-width: 100%;
+    }
+
+    #circles-img {
+        max-width: 100%;
+        position: relative;
+        top: -60px;
+        left: 0;
+    }
+
+    #phones-title {
+        width: fit-content;
+        position: unset;
+        margin-top: -30%;
+        margin-bottom: 10%;
+        font-size: 30px;
+        text-align: center;
+        padding: 0 2px;
+    }
+
+    #phones-para {
+        width: 80%;
+        position: unset;
+        text-align: center;
+    }
+
+    #laptop-section {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #laptop-img {
+        position: unset;
+        margin-top: 10%;
+    }
+
+    #laptop-para-title-1, #laptop-para-title-2 {
+        position: unset;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #laptop-para-1, #laptop-para-2  {
+        position: unset;
+        width: 70%;
+        text-align: center;
+
+    }
+
+    footer {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #footer-logo {
+        margin: 20px 0;
+    }
+
+    .footer-lists {
+        margin: 20px 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin: 20% 0;
+    }
+
+}
